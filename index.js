@@ -3,7 +3,7 @@ var ghpages = require("gh-pages");
 ghpages.publish(
   "_book",
   {
-    branch: "master",
+    branch: "main",
     repo: "https://github.com/sumeng535894711/qingniu_r_doc.git"
   },
   function(err) {
