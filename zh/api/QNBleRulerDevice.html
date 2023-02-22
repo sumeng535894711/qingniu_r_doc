@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>QNBleProtocolHandler · GitBook</title>
+        <title>QNBleRulerDevice · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="QNBleProtocolDelegate.html" />
+    <link rel="next" href="QNBleRulerData.html" />
     
     
-    <link rel="prev" href="QNUtils.html" />
+    <link rel="prev" href="QNWspScaleDataListener.html" />
     
 
     </head>
@@ -916,7 +916,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.23" data-path="QNBleProtocolHandler.html">
+        <li class="chapter " data-level="1.5.23" data-path="QNBleProtocolHandler.html">
             
                 <a href="QNBleProtocolHandler.html">
             
@@ -968,7 +968,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.27" data-path="QNBleRulerDevice.html">
+        <li class="chapter active" data-level="1.5.27" data-path="QNBleRulerDevice.html">
             
                 <a href="QNBleRulerDevice.html">
             
@@ -1230,7 +1230,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >QNBleProtocolHandler</a>
+        <a href=".." >QNBleRulerDevice</a>
     </h1>
 </div>
 
@@ -1245,13 +1245,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="qnbleprotocolhandler">QNBleProtocolHandler</h1>
-<p>Yolanda&#x84DD;&#x7259;&#x534F;&#x8BAE;&#x5904;&#x7406;&#x7C7B;&#xFF0C;&#x914D;&#x5408;<a href="QNBleProtocolDelegate.html">QNBleProtocolDelegate</a> &#x53EF;&#x5B9E;&#x73B0;&#x5BA2;&#x6237;&#x81EA;&#x5DF1;&#x7BA1;&#x7406;&#x84DD;&#x7259;&#x8FDE;&#x63A5;&#x3002;</p>
-<p>&#x79F0;&#x91CD;&#x6570;&#x636E;&#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x8FD8;&#x662F;&#x901A;&#x8FC7;<a href="QNScaleDataListener.html">QNScaleDataListener</a>&#x6765;&#x56DE;&#x8C03;&#x3002;&#x84DD;&#x7259;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x7B49;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x4E0D;&#x518D;&#x56DE;&#x8C03;<a href="QNBleConnectionChangeListener.html">QNBleConnectionChangeListener</a></p>
-<h2 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h2>
-<h3 id="prepare">prepare</h3>
-<p>&#x901A;&#x77E5;&#x534F;&#x8BAE;&#x5904;&#x7406;&#x5668;&#x505A;&#x521D;&#x59CB;&#x5316;&#x7684;&#x5DE5;&#x4F5C;</p>
-<h4 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h4>
+                                <h1 id="qnblerulerdevice">QNBleRulerDevice</h1>
+<p>Yolanda&#x84DD;&#x7259;&#x56F4;&#x5EA6;&#x5C3A;&#x8BBE;&#x5907;&#x5BF9;&#x8C61;</p>
+<h3 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h3>
 <table>
 <thead>
 <tr>
@@ -1262,36 +1258,24 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">service_uuid</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">&#x4E3B;&#x670D;&#x52A1;&#x7684;UUID</td>
-</tr>
-</tbody>
-</table>
-<h3 id="ongetbledata">onGetBleData</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x540D;&#x79F0;</th>
-<th style="text-align:left">&#x7C7B;&#x578B;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">service_uuid</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">&#x84DD;&#x7259;&#x670D;&#x52A1;&#x7684;UUID</td>
+<td style="text-align:left">mac</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">MAC&#x5730;&#x5740;&#xFF0C;sdk&#x4F1A;&#x6839;&#x636E;&#x626B;&#x63CF;&#x5230;&#x7684;&#x5E7F;&#x64AD;&#x4FE1;&#x606F;&#x89E3;&#x6790;&#xFF0C;&#x540C;&#x4E00;&#x53F0;&#x8BBE;&#x5907;&#xFF0C;&#x5B89;&#x5353;&#x548C;IOS&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x4E00;&#x6837;&#x3002;&#x6BCF;&#x53F0;&#x8BBE;&#x5907;&#x552F;&#x4E00;</td>
 </tr>
 <tr>
-<td style="text-align:left">characteristic_uuid</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">&#x7279;&#x5F81;&#x503C;&#x7684;UUID</td>
+<td style="text-align:left">modeId</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x578B;&#x53F7;&#x6807;&#x8BC6;</td>
 </tr>
 <tr>
-<td style="text-align:left">data</td>
-<td style="text-align:left">byte[]/NSData</td>
-<td style="text-align:left">&#x84DD;&#x7259;&#x56DE;&#x4F20;&#x7684;&#x6570;&#x636E;&#xFF08;&#x4E0D;&#x8BBA;&#x662F;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x8FD8;&#x662F;&#xFF0C;&#x84DD;&#x7259;&#x56DE;&#x8C03;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x90FD;&#x662F;&#x4F20;&#x5230;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF09;&#xFF0C;&#x5B89;&#x5353;&#x662F;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#xFF0C;iOS&#x662F;NSData&#x5BF9;&#x8C61;</td>
+<td style="text-align:left">bluetoothName</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x84DD;&#x7259;&#x540D;&#x79F0;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x5E7F;&#x64AD;&#x540D;&#x79F0;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">RSSI</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">&#x4FE1;&#x53F7;&#x5F3A;&#x5EA6;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x8D1F;&#x6570;&#xFF0C;&#x4E00;&#x822C;&#x5728;-30~-100 &#x4E4B;&#x95F4;&#xFF0C;&#x6570;&#x503C;&#x8D8A;&#x5927;&#xFF0C;&#x8868;&#x793A;&#x4FE1;&#x53F7;&#x5F3A;&#x5EA6;&#x8D8A;&#x5927;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x8BBE;&#x5907;&#x53EF;&#x80FD;&#x56DE;&#x8C03;&#x591A;&#x6B21;&#xFF0C;&#x6BCF;&#x6B21;&#x56DE;&#x8C03;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4FE1;&#x53F7;&#x5F3A;&#x5EA6;&#x7684;&#x503C;&#x4E0D;&#x4E00;&#x6837;&#x3002;</td>
 </tr>
 </tbody>
 </table>
@@ -1322,12 +1306,12 @@
 
             
                 
-                <a href="QNUtils.html" class="navigation navigation-prev " aria-label="Previous page: QNUtils">
+                <a href="QNWspScaleDataListener.html" class="navigation navigation-prev " aria-label="Previous page: QNWspScaleDataListener">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="QNBleProtocolDelegate.html" class="navigation navigation-next " aria-label="Next page: QNBleProtocolDelegate">
+                <a href="QNBleRulerData.html" class="navigation navigation-next " aria-label="Next page: QNBleRulerData">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1338,7 +1322,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"QNBleProtocolHandler","level":"1.5.23","depth":2,"next":{"title":"QNBleProtocolDelegate","level":"1.5.24","depth":2,"path":"api/QNBleProtocolDelegate.md","ref":"api/QNBleProtocolDelegate.md","articles":[]},"previous":{"title":"QNUtils","level":"1.5.22","depth":2,"path":"api/QNUtils.md","ref":"api/QNUtils.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid-gb3":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"api/QNBleProtocolHandler.md","mtime":"2022-03-01T12:53:11.343Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-22T08:25:28.726Z"},"basePath":"..","book":{"language":"zh"}});
+            gitbook.page.hasChanged({"page":{"title":"QNBleRulerDevice","level":"1.5.27","depth":2,"next":{"title":"QNBleRulerData","level":"1.5.28","depth":2,"path":"api/QNBleRulerData.md","ref":"api/QNBleRulerData.md","articles":[]},"previous":{"title":"QNWspScaleDataListener","level":"1.5.26","depth":2,"path":"api/QNWspScaleDataListener.md","ref":"api/QNWspScaleDataListener.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid-gb3":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"api/QNBleRulerDevice.md","mtime":"2023-02-20T01:56:01.246Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-22T08:25:28.726Z"},"basePath":"..","book":{"language":"zh"}});
         });
     </script>
 </div>
